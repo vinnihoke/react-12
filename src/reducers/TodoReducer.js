@@ -13,7 +13,7 @@ export const TodoReducer = (state, action) => {
         }
       ];
     case "CLEAR_TODO":
-      return state.filter(todo => todo.completed !== true);
+      return state.filter(todo => todo.completed === false);
 
     case "TOGGLE_TODO":
       return state.map(todo => {
